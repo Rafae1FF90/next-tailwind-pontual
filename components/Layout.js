@@ -6,7 +6,9 @@ export default function Layout({ title, children }) {
   return (
     <>
       <Head>
-        <title>{title ? title + ' - Pontual' : 'Pontual'}</title>
+        <title>
+          {title ? title + ' - Pontual Distribuidora' : 'Pontual Distribuidora'}
+        </title>
         <meta name="description" content="Ecommerce Pontual" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -19,15 +21,15 @@ export default function Layout({ title, children }) {
             </Link>
             <div>
               <Link href="/cart">
-                <a className="p-2">Cart</a>
+                <a className="p-2">Carrinho</a>
               </Link>
               <Link href="/login">
-                <a className="p-2">Login</a>
+                <a className="p-2">Entrar / Cadastre-se</a>
               </Link>
             </div>
           </nav>
         </header>
-        <main className="container m-auto mt-14 px-4">{children}</main>
+        <main className="container m-auto mt-4 px-4">{children}</main>
         <footer className="flex h-10 justify-center items-center shadow-inner">
           <p>Todos os direitos reservados © 2022 Pontual - Techpool</p>
         </footer>
