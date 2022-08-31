@@ -27,6 +27,12 @@ a {
   @apply rounded bg-green-500 py-2 px-4 shadow outline-none hover:bg-green-600 active:bg-green-900;
 }
 
+input,
+select,
+textarea {
+  @apply rounded border p-2 outline-none ring-indigo-300 focus:ring;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
