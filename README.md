@@ -17,7 +17,7 @@ description
 6. List Products
    1. add data.js
    2. add images
-   3. render products\
+   3. render products
 7. Create Product Details
    1. create product page
    2. create 3 columns

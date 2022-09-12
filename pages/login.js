@@ -44,7 +44,7 @@ export default function LoginScreen() {
               required: 'Por favor digite sua senha.',
               minLength: {
                 value: 6,
-                message: 'Senha deve com mais de 6 caracteres',
+                message: 'Senha deve conter mais de 6 caracteres',
               },
             })}
             className="w-full"
