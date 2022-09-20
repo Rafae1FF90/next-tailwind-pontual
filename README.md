@@ -68,3 +68,7 @@ description
 17. Create Payment Method Screen
     1. display payment methods
     2. save payment method in context
+18. Seed sample products
+    1. insert sample products to mongodb
+    2. load products from db in home and product screen
+    3. check product count in stock in add to cart

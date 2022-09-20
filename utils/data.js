@@ -5,7 +5,7 @@ const data = {
     {
       name: 'Giovanni',
       email: 'giovani@webpontual.com.br',
-      password: bcrypt.hashSync('123456'),
+      password: bcrypt.hashSync('WebPontu@lGio123'),
       isAdmin: true,
     },
     {
@@ -42,7 +42,7 @@ const data = {
     },
     {
       name: 'Fonte Notebook',
-      slug: 'fonte-notebook',
+      slug: 'fonte-notebook2',
       category: 'Fontes',
       image: '/images/fontenb1.jpg',
       price: 199,
@@ -54,7 +54,7 @@ const data = {
     },
     {
       name: 'Fonte Notebook',
-      slug: 'fonte-notebook',
+      slug: 'fonte-notebook3',
       category: 'Fontes',
       image: '/images/fontenb1.jpg',
       price: 199,
@@ -66,7 +66,7 @@ const data = {
     },
     {
       name: 'Fonte Notebook',
-      slug: 'fonte-notebook',
+      slug: 'fonte-notebook4',
       category: 'Fontes',
       image: '/images/fontenb1.jpg',
       price: 199,
@@ -78,7 +78,7 @@ const data = {
     },
     {
       name: 'Fonte Notebook',
-      slug: 'fonte-notebook',
+      slug: 'fonte-notebook5',
       category: 'Fontes',
       image: '/images/fontenb1.jpg',
       price: 199,
