@@ -33,10 +33,10 @@ export default function ProductScreen(props) {
 
   return (
     <Layout title={product.name}>
-      <div className="py-2">
+      <div className="py-4">
         <Link href="/">Voltar para catálogo de produtos</Link>
       </div>
-      <div className="grid md:grid-cols-4 md:gap-3">
+      <div className="grid md:grid-cols-4 md:gap-4">
         <div className="md:col-span-2">
           <Image
             src={product.image}
@@ -62,7 +62,7 @@ export default function ProductScreen(props) {
         <div>
           <div className="card p-5">
             <div className="mb-2 flex justify-between">
-              <div>Preço</div>
+              <div>Preço:</div>
               <div>R${product.price}</div>
             </div>
             <div className="mb-2 flex justify-between">

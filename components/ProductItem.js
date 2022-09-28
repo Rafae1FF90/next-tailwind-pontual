@@ -21,7 +21,7 @@ export default function ProductItem({ product, addToCartHandler }) {
           </a>
         </Link>
         <p className="mb-2">{product.brand}</p>
-        <p>R${product.price}</p>
+        <p className="mb-2">R${product.price}</p>
         <button
           className="primary-button"
           type="button"

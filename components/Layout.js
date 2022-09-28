@@ -89,15 +89,15 @@ export default function Layout({ title, children }) {
                 </Menu>
               ) : (
                 <Link href="/login">
-                  <a className="p-2">Entrar / Cadastre-se</a>
+                  <a className="p-4">Entrar / Cadastre-se</a>
                 </Link>
               )}
             </div>
           </nav>
         </header>
-        <main className="container m-auto mt-4 px-4">{children}</main>
-        <footer className="flex h-10 justify-center items-center shadow-inner">
-          <p>Todos os direitos reservados © 2022 Pontual - Techpool</p>
+        <main className="container m-auto mt-10 px-16">{children}</main>
+        <footer className="flex h-12 justify-center items-center shadow-inner">
+          <p>Todos os direitos reservados © 2022 Pontual</p>
         </footer>
       </div>
     </>
