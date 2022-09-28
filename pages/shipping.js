@@ -24,19 +24,13 @@ export default function ShippingScreen() {
     setValue('address', shippingAddress.address);
     setValue('city', shippingAddress.city);
     setValue('postalCode', shippingAddress.postalCode);
-    setValue('unidadeFederal', shippingAddress.unidadeFederal);
+    setValue('country', shippingAddress.country);
   }, [setValue, shippingAddress]);
 
-  const submitHandler = ({
-    fullName,
-    address,
-    city,
-    postalCode,
-    unidadeFederal,
-  }) => {
+  const submitHandler = ({ fullName, address, city, postalCode, country }) => {
     dispatch({
       type: 'SAVE_SHIPPING_ADDRESS',
-      payload: { fullName, address, city, postalCode, unidadeFederal },
+      payload: { fullName, address, city, postalCode, country },
     });
     Cookies.set(
       'cart',
@@ -47,7 +41,7 @@ export default function ShippingScreen() {
           address,
           city,
           postalCode,
-          unidadeFederal,
+          country,
         },
       })
     );
@@ -123,17 +117,17 @@ export default function ShippingScreen() {
           )}
         </div>
         <div className="mb-4">
-          <label htmlFor="unidadeFederal">Estado</label>
+          <label htmlFor="country">Estado</label>
           <input
             className="w-full"
-            id="unidadeFederal"
+            id="country"
             autoFocus
-            {...register('unidadeFederal', {
+            {...register('country', {
               required: 'Favor informar seu estado/UF',
             })}
           />
-          {errors.unidadeFederal && (
-            <div className="text-red-500">{errors.unidadeFederal.message}</div>
+          {errors.country && (
+            <div className="text-red-500">{errors.country.message}</div>
           )}
         </div>
         <div className="mb-4 flex justify-between">
